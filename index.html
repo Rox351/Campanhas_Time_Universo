@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta property="og:title" content="Roupas Quentinhas!" />
-    <meta
+    <!-- <meta
       property="og:description"
       content="Clique para ver a oferta exclusiva de hoje."
-    />
+    /> -->
     <meta
       property="og:image"
       content="https://rox351.github.io/Campanhas_Time_Universo/campanhas/Roupas_Quentinhas.jpg"
@@ -17,51 +17,38 @@
     />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roupas Quentinhas!</title>
+    <title>Promoção Especial!</title>
   </head>
   <body>
     <div
       style="text-align: center; padding: 50px; font-family: Arial, sans-serif"
     >
       <h1>Roupas Quentinhas!</h1>
-      <p>Clique para ver a oferta exclusiva de hoje.</p>
-      <p id="status">Redirecionando...</p>
+      <!-- <p>Clique para ver a oferta exclusiva de hoje.</p> -->
+      <img
+        src="https://rox351.github.io/Campanhas_Time_Universo/campanhas/Roupas_Quentinhas.jpg"
+        alt="Promoção Especial"
+        style="
+          max-width: 100%;
+          height: auto;
+          margin: 20px 0;
+          border-radius: 10px;
+        "
+      />
+      <br />
       <a
         href="https://wa.me/555139220783?text=Ol%C3%A1,%20recebi%20mensagem%20do%20Marketing%20e%20estou%20entrando%20em%20contato%20para%20ter%20atendimento."
-        id="fallback"
         style="
-          display: none;
-          background: #007bff;
+          background: #25d366;
           color: white;
-          padding: 10px 20px;
+          padding: 15px 30px;
           text-decoration: none;
-          border-radius: 5px;
+          border-radius: 25px;
+          font-size: 18px;
+          font-weight: bold;
         "
-        >Clique aqui se não foi redirecionado</a
+        >Clique aqui e entre em contato conosco</a
       >
     </div>
-    <script>
-      // Detecta se é um bot (WhatsApp, Facebook, etc.)
-      var isBot = /bot|crawler|spider|crawling/i.test(navigator.userAgent);
-
-      if (!isBot) {
-        // Para usuários reais: redirecionamento automático
-        window.location.href =
-          "https://wa.me/555139220783?text=Ol%C3%A1,%20recebi%20mensagem%20do%20Marketing%20e%20estou%20entrando%20em%20contato%20para%20ter%20atendimento.";
-
-        // // Mostra link de fallback após 3 segundos
-        // setTimeout(function() {
-        //   document.getElementById('status').style.display = 'none';
-        //   document.getElementById('fallback').style.display = 'inline-block';
-        // }, 3000);
-      } else {
-        // Para bots: não redireciona, apenas mostra o conteúdo
-        document.getElementById("status").innerHTML =
-          "Clique no link para acessar a promoção!";
-        document.getElementById("fallback").style.display = "inline-block";
-      }
-    </script>
   </body>
 </html>
-
-
