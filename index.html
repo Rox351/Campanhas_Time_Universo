@@ -19,34 +19,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Promoção Especial!</title>
   </head>
-  <body style="margin: 0; padding: 0;">
+  <body style="margin: 0; padding: 0">
     <div
       style="
-        text-align: center; 
-        padding: 20px; 
+        text-align: center;
         font-family: Arial, sans-serif;
-        max-width: 600px;
-        margin: 0 auto;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
       "
     >
-      <h1 style="font-size: clamp(24px, 5vw, 32px); margin-bottom: 20px; color: #333;">Roupas Quentinhas!</h1>
+      <h1 style="font-size: clamp(24px, 5vw, 32px); color: #333">
+        Roupas Quentinhas!
+      </h1>
       <img
         src="https://rox351.github.io/Campanhas_Time_Universo/campanhas/Roupas_Quentinhas.jpg"
         alt="Promoção Especial"
+        class="campaign-image"
         style="
-          width: 90%;
-          max-width: 400px;
           height: auto;
           margin: 20px auto;
           border-radius: 15px;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         "
       />
+      <style>
+        @media (min-width: 768px) {
+          .campaign-image {
+            width: 700px !important;
+            height: 700px !important;
+            max-width: none !important;
+          }
+        }
+        @media (max-width: 767px) {
+          .campaign-image {
+            width: 90% !important;
+            max-width: 400px !important;
+            height: auto !important;
+          }
+        }
+      </style>
+      <a
+        href="https://wa.me/555139220783?text=Ol%C3%A1,%20recebi%20mensagem%20do%20Marketing%20e%20estou%20entrando%20em%20contato%20para%20ter%20atendimento."
+        style="
+          background: #25d366;
+          color: white;
+          padding: 15px 25px;
+          text-decoration: none;
+          border-radius: 30px;
+          font-size: clamp(16px, 4vw, 18px);
+          font-weight: bold;
+          display: inline-block;
+          margin-top: 20px;
+          transition: background-color 0.3s;
+          box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+          max-width: 400px;
+        "
+        >Clique aqui e fale com nosso atendimento</a
+      >
     </div>
   </body>
 </html>
-
