@@ -11,11 +11,32 @@
     <title>Promoção Especial!</title>
   </head>
   <body>
-    <p>Redirecionando...</p>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+      <h1>Promoção Especial!</h1>
+      <p>Clique para ver a oferta exclusiva de hoje.</p>
+      <p id="status">Redirecionando...</p>
+      <a href="https://loja.timeuniverso.com.br/enroupa/canguru" id="fallback" style="display: none; background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Clique aqui se não foi redirecionado</a>
+    </div>
     <script>
-      setTimeout(function() {
-        window.location.href = "https://loja.timeuniverso.com.br/enroupa/canguru";
-      }, 1000);
+      // Detecta se é um bot (WhatsApp, Facebook, etc.)
+      var isBot = /bot|crawler|spider|crawling/i.test(navigator.userAgent);
+      
+      if (!isBot) {
+        // Para usuários reais: redirecionamento automático
+        setTimeout(function() {
+          window.location.href = "https://loja.timeuniverso.com.br/enroupa/canguru";
+        }, 2000);
+        
+        // Mostra link de fallback após 3 segundos
+        setTimeout(function() {
+          document.getElementById('status').style.display = 'none';
+          document.getElementById('fallback').style.display = 'inline-block';
+        }, 3000);
+      } else {
+        // Para bots: não redireciona, apenas mostra o conteúdo
+        document.getElementById('status').innerHTML = 'Clique no link para acessar a promoção!';
+        document.getElementById('fallback').style.display = 'inline-block';
+      }
     </script>
   </body>
 </html>
