@@ -3,39 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta property="og:title" content="Promoção Especial!" />
-    <meta property="og:description" content="Clique para ver a oferta exclusiva de hoje." />
-    <meta property="og:image" content="https://rox351.github.io/Campanhas_Time_Universo/campanhas/Roupas_Quentinhas.jpg" />
-    <meta property="og:url" content="https://rox351.github.io/Campanhas_Time_Universo/" />
+    <meta
+      property="og:description"
+      content="Clique para ver a oferta exclusiva de hoje."
+    />
+    <meta
+      property="og:image"
+      content="https://rox351.github.io/Campanhas_Time_Universo/campanhas/Roupas_Quentinhas.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://rox351.github.io/Campanhas_Time_Universo/"
+    />
     <meta property="og:type" content="website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Promoção Especial!</title>
+    <title>Roupas Quentinhas!</title>
   </head>
   <body>
-    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+    <div
+      style="text-align: center; padding: 50px; font-family: Arial, sans-serif"
+    >
       <h1>Promoção Especial!</h1>
       <p>Clique para ver a oferta exclusiva de hoje.</p>
       <p id="status">Redirecionando...</p>
-      <a href="https://loja.timeuniverso.com.br/enroupa/canguru" id="fallback" style="display: none; background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Clique aqui se não foi redirecionado</a>
+      <a
+        href="https://wa.me/555139220783?text=Ol%C3%A1,%20recebi%20mensagem%20do%20Marketing%20e%20estou%20entrando%20em%20contato%20para%20ter%20atendimento."
+        id="fallback"
+        style="
+          display: none;
+          background: #007bff;
+          color: white;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+        >Clique aqui se não foi redirecionado</a
+      >
     </div>
     <script>
       // Detecta se é um bot (WhatsApp, Facebook, etc.)
       var isBot = /bot|crawler|spider|crawling/i.test(navigator.userAgent);
-      
+
       if (!isBot) {
         // Para usuários reais: redirecionamento automático
-        setTimeout(function() {
-          window.location.href = "https://loja.timeuniverso.com.br/enroupa/canguru";
-        }, 2000);
-        
-        // Mostra link de fallback após 3 segundos
-        setTimeout(function() {
-          document.getElementById('status').style.display = 'none';
-          document.getElementById('fallback').style.display = 'inline-block';
-        }, 3000);
+        window.location.href =
+          "https://wa.me/555139220783?text=Ol%C3%A1,%20recebi%20mensagem%20do%20Marketing%20e%20estou%20entrando%20em%20contato%20para%20ter%20atendimento.";
+
+        // // Mostra link de fallback após 3 segundos
+        // setTimeout(function() {
+        //   document.getElementById('status').style.display = 'none';
+        //   document.getElementById('fallback').style.display = 'inline-block';
+        // }, 3000);
       } else {
         // Para bots: não redireciona, apenas mostra o conteúdo
-        document.getElementById('status').innerHTML = 'Clique no link para acessar a promoção!';
-        document.getElementById('fallback').style.display = 'inline-block';
+        document.getElementById("status").innerHTML =
+          "Clique no link para acessar a promoção!";
+        document.getElementById("fallback").style.display = "inline-block";
       }
     </script>
   </body>
